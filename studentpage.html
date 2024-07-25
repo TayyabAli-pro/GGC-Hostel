@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="studentpage.css">
+</head>
+<body id="body">
+    <nav class="nav" >
+        <div class="mainlogo">
+
+        </div>
+        <div class="icons">
+            <div><a href="admin.html"><i class="ri-home-4-line"></i></a></div>
+            <div><a href="studentpage.html"><i class="ri-user-3-line"></i></a>
+                <span class="notification-badge1" id="notificationBadge1">0</span>
+            </div>
+            <div><a href="complain.html"><i class="ri-edit-box-line"></i></a>
+            <span class="notification-badge" id="notificationBadge">0</span>
+            </div>
+            <div><a href="mess.html"><i class="ri-restaurant-line"></i></a></div>
+        </div>
+    </nav>
+    <header class="header" >
+        <div class="logo"></div>
+        <h3 class="text">Hello!</h3>
+        <div class="container">
+            <select name="access" id="access">
+                <option value="admin">Admin</option>
+                <option value="student">student</option>
+            </select>
+        </div>
+</header>  
+    <section class="section" >
+    <div class="searchbar">
+    <h1 class="h1">All Students</h1>
+    <input type="text" id="searchInput" placeholder="Search by name or roll number">
+    </div>
+    <div id="allstudents" class="ss1">
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Room No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentList">
+                <!-- Student data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <div id="pendingPaymentsContainer" class="table-container">
+        <h2 class="h1">Pending Payments</h2>
+        <table id="pendingPaymentsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Pending payments will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+        <!-- Update Student Modal -->
+        <div id="updateModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Update Student</h2>
+                <form id="updateForm">
+                        <div class="input1">
+                            <div class="inp1"><h3>Student Name</h3><input id="updatesname" type="text" placeholder="S. Name" required></div>
+                            <div class="inp1"><h3>Father Name</h3><input id="updatefname" type="text" placeholder="F. Name" required></div>
+                        </div>
+                        <div class="input1">
+                            <div class="inp1"><h3>Student CNIC</h3><input id="updatescnic" type="number" placeholder="CNIC" required></div>
+                            <div class="inp1"><h3>Father CNIC</h3><input id="updatefcnic" type="number" placeholder="CNIC" required></div>
+                        </div>
+                        <div class="input1">
+                            <div class="inp1"><h3>Roll No</h3><input id="updaterollno" type="number" placeholder="roll no" required></div>
+                            <div class="inp1"><h3>Allocate room</h3><input id="updateroom" type="number" placeholder="room no" required></div>
+                        </div>
+                        <div class="input2">
+                            <h3>Address</h3><input id="updateaddress" type="text" class="inp2" placeholder="pakistan" required>
+                        </div>
+                        <div class="input1">
+                            <div class="inp1"><h3>Student Mobile Number</h3><input id="updatesnumber" type="number" placeholder="+923425440120" required></div>
+                            <div class="inp1"><h3>Guardian Mobile Number</h3><input id="updatefnumber" type="number" placeholder="+923425440120" required></div>
+                        </div>
+                        <div class="input2">
+                            <h3>Session</h3><input id="updatedate" type="date" class="inp2" required>
+                        </div>
+                        <div class="input1">
+                            <div class="inp1"><h3>Degree</h3><select name="degree" id="updatedegree" required>
+                                <option value="BS">BS</option>
+                                <option value="First_Year">First Year</option>
+                                <option value="Second_Year">Second Year</option>
+                            </select></div>
+                            <div class="inp1"><h3>Gender</h3><select name="gender" id="updategender" required>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                                <option value="other">Other</option>
+                            </select></div>
+                        </div>
+                        <div class="input1">
+                            <div class="inp1"><h3>Username</h3><input id="updateusername" type="test" placeholder="harry" required></div>
+                            <div class="inp1"><h3>Password</h3><input id="updatepassword" type="password" placeholder="harry123" required></div>
+                        </div>
+                    <button type="submit" class="update-btn">Update Student</button>
+                </form>
+            </div>
+        </div>
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <span class="close-payment-button">&times;</span>
+                <h2>Pay Bill</h2>
+                <form id="paymentForm" class="input1">
+                    <label for="paymentAmount">Amount:</label>
+                    <input type="number" id="paymentAmount" name="paymentAmount" required>
+                    <button type="submit" class="update-btn">Pay</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<script src="studentpage.js"></script>  
+</body>
+</html>

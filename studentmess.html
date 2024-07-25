@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentmess.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body id="body">
+    <nav class="nav" >
+        <div class="mainlogo">
+        </div>
+        <div class="icons">      
+            <div id="icon1"><a href="student.html" id="tag1"><i class="ri-home-4-line"></i></a></div>
+            <div id="icon2"><a href="studentmanage.html"><i class="ri-user-3-line"></i></a></div>
+            <div id="icon3"><a href="studentcomplain.html"><i class="ri-edit-box-line"></i></a></div>
+            <div id="icon4"><a href="studentmess.html"><i class="ri-restaurant-line"></i></a>
+                <span class="notification-badge" id="notificationBadge">0</span>
+            </div>
+        </div>
+    </nav>
+    <header class="header" >
+        <div class="logo"></div>
+        <h3 class="text">Hello!</h3>
+        <div class="container">
+            <select name="access" id="access">
+                <option value="student">Student</option>
+                <option value="admin">admin</option>
+            </select>
+        </div>
+</header>
+<section class="section">
+    <h1>Student Mess Bill</h1>
+    
+    <div id="billContainer" class="table-container">
+        <h2>Mess Bill</h2>
+        <p>Remaining Bill: <span id="remainingBill">0</span></p>
+        <p>Current Bill: <span id="currentBill">0</span></p>
+        <p>Total Bill: <span id="totalBill">0</span></p>
+    </div>
+    
+    <div id="sendBillContainer" class="table-container">
+        <h2>Send Payment</h2>
+        <form id="sendBillForm">
+            <label for="sendAmount">Amount to Pay:</label>
+            <input type="number" id="sendAmount" name="sendAmount" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="sentPaymentsContainer" class="table-container">
+        <h2>Sent Payments</h2>
+        <ul id="sentPaymentsList">
+            <!-- Sent payments will be listed here -->
+        </ul>
+    </div>
+</section>
+<script src="studentmess.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: none;
+    grid-template-rows: 0.14fr 1fr ;
+    grid-template-columns: 0.16fr 3fr;
+    width: 100%;
+    height: 100vh;
+}
+.nav{
+    background-color: white;
+    height: 100vh;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    box-shadow:  0.2vw 0.1vw rgba(0, 0, 0, 0.055) ;
+}
+.mainlogo{
+    border-radius: 50%;
+    margin: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+    background-image: url(logo.jpg);
+    background-size: contain;
+    background-position: center;
+}
+h1,h2{
+    font-size: 2vw;
+    color:  #FF612F;
+}
+.icons{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+.icons>div{
+    padding: 0.8vw;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.icons>div>a>i{   
+    font-size: 2.5vw;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(247, 243, 243, 0.712);
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.068);
+}
+#access{
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+    background: transparent;
+    border: none;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.logo{
+    border-radius: 50%;
+    border: 1px solid #FF612F;
+    margin: 0.3vw;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(logo.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.text{
+    color: #FF612F;
+    font-weight: 500;
+    font-size: 1vw;
+}
+.section{
+    overflow: scroll;
+    padding: 0vw 2vw 2vw 2vw;
+    background-color: rgba(247, 243, 243, 0.712);
+}
+.notification-badge {
+    width: 0.4vw;
+    position: relative;
+    bottom: 3.3vw;
+    right: -1.5vw;
+    background-color: #FF612F;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2vw 0.5vw;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+.table-container {
+    background-color: #fff;
+    padding: 2vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    border-radius: 0.8vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#sendBillForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+#sendBillForm> label{
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+#sendBillForm> input{
+    border-radius: 0.5vw;
+    border:1px solid rgba(0, 0, 0, 0.37); 
+    font-size: 1.4vw;  
+    font-weight: 500;
+    padding: 1vw 0vw 1vw 1vw;
+}
+#sendBillForm> button{
+    width: 20vw;
+    padding: 0.7vw 2vw 0.7vw 2vw;
+    border: none;
+    background-color: #FF612F;
+    color: #fff;
+    border-radius: 4vw;
+    cursor: pointer;
+}
+#sendBillForm>button:hover{
+    transition: 0.3s;
+    background-color: rgba(5, 5, 5, 0.904);
+}
+#billContainer>p{
+    font-size: 1.4vw;
+    font-weight: 500;
+    padding: 1vw;
+}
+#billContainer>p>span{
+    font-size: 1.4vw;
+    font-weight: 500;
+    padding-left: 1vw;
+}
+#sentPaymentsContainer>ul>li{
+    font-size: 1.4vw;
+    word-spacing: 0.3vw;
+    font-weight: 500;
+    padding: 1vw;
+}

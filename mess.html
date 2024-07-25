@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="mess.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <nav class="nav" >
+        <div class="mainlogo">
+
+        </div>
+        <div class="icons">
+            
+            <div id="icon1"><a href="admin.html" id="tag1"><i class="ri-home-4-line"></i></a></div>
+            <div id="icon2"><a href="studentpage.html"><i class="ri-user-3-line"></i></a>
+                <span class="notification-badge1" id="notificationBadge1">0</span>
+            </div>
+            <div id="icon3"><a href="complain.html"><i class="ri-edit-box-line"></i></a>
+            <span class="notification-badge" id="notificationBadge">0</span>
+            </div>
+            <div id="icon4"><a href="mess.html"><i class="ri-restaurant-line"></i></a></div>
+        </div>
+    </nav>
+    <header class="header" >
+        <div class="logo"></div>
+        <h3 class="text">Hello!</h3>
+        <div class="container">
+            <select name="access" id="access">
+                <option value="admin">Admin</option>
+                <option value="student">student</option>
+            </select>
+        </div>
+</header>
+    <section class="section">
+        <div id="messFormContainer" class="form-container">
+            <h2>Manage Mess Bills</h2>
+            <form id="messForm">
+                <label for="messStudentName">Student Name:</label>
+                <select id="messStudentName" required></select>
+                <label for="currentBill">Current Bill:</label>
+                <input type="number" id="currentBill" required>
+                <button type="submit">Update Bill</button>
+            </form>
+        </div>
+    
+        <div id="messTableContainer" class="table-container">
+            <h2>Mess Bill Records</h2>
+            <table id="messTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Remaining Bill</th>
+                        <th>Current Bill</th>
+                        <th>Total Bill</th>
+                        <th>Paid Bill</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Mess bill rows will be appended here -->
+                </tbody>
+            </table>
+        </div>
+            <!-- Mess Menu Section -->
+            <div class="table-container">
+            <div class="menu-container">
+                <h2>Mess Menu</h2>
+                <table id="menuTable">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Menu</th>
+                            <th>Update Menu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td id="mondayMenuDisplay"></td>
+                            <td><button class="update-menu-btn" data-day="monday">Update Menu</button></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td id="tuesdayMenuDisplay"></td>
+                            <td><button class="update-menu-btn" data-day="tuesday">Update Menu</button></td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td id="wednesdayMenuDisplay"></td>
+                            <td><button class="update-menu-btn" data-day="wednesday">Update Menu</button></td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td id="thursdayMenuDisplay"></td>
+                            <td><button class="update-menu-btn" data-day="thursday">Update Menu</button></td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td id="fridayMenuDisplay"></td>
+                            <td><button class="update-menu-btn" data-day="friday">Update Menu</button></td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td id="saturdayMenuDisplay"></td>
+                            <td><button class="update-menu-btn" data-day="saturday">Update Menu</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td id="sundayMenuDisplay"></td>
+                            <td><button class="update-menu-btn" data-day="sunday">Update Menu</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+            <div id="updateMenuModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Update Menu</h2>
+                    <form id="updateMenuForm">
+                        <label for="menuContent">Menu:</label>
+                        <input type="text" id="menuContent" required>
+                        <button type="submit">Update Menu</button>
+                    </form>
+                </div>
+            </div>
+        
+    </section>
+    <script src="mess.js"></script>
+</body>
+</html>

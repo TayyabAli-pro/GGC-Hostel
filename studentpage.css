@@ -1,0 +1,270 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: none;
+    grid-template-rows: 0.14fr 1fr ;
+    grid-template-columns: 0.16fr 3fr;
+    width: 100%;
+    height: 100vh;
+}
+.nav{
+    background-color: white;
+    height: 100vh;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    box-shadow:  0.2vw 0.1vw rgba(0, 0, 0, 0.055) ;
+}
+.mainlogo{
+    border-radius: 50%;
+    margin: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+    background-image: url(logo.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.icons{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+.icons>div{
+    padding: 0.8vw;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.icons>div>a>i{   
+    font-size: 2.5vw;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: rgba(247, 243, 243, 0.712);
+    border-bottom: 0.2px solid rgba(0, 0, 0, 0.068);
+}
+#access{
+    margin-left: 0.5vw;
+    margin-right: 1vw;
+    background: transparent;
+    border: none;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.logo{
+    border-radius: 50%;
+    border: 1px solid #FF612F;
+    margin: 0.3vw;
+    width: 3vw;
+    height: 3vw;
+    background-image: url(logo.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.text{
+    color: #FF612F;
+    font-weight: 500;
+    font-size: 1vw;
+}
+.section{
+    overflow: scroll;
+    padding: 0vw 2vw 2vw 2vw;
+    background-color: rgba(247, 243, 243, 0.712);
+}
+.ss1{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 1vw;
+    box-shadow: 3px 3px 3px 3px  rgb(214, 231, 231);
+    background-color: white;
+}
+.input1{
+    margin: 2vw 2vw 2vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+}
+.inp1>h3,.input2>h3,.input3>h3{
+    font-size: 1.3vw;
+    font-weight: 700;
+    padding-bottom: 1vw;
+}
+.inp1{
+    width: 100%;
+}
+.inp1>input{
+    width: 100%;
+    border-radius: 0.5vw;
+    border:1px solid rgba(0, 0, 0, 0.37);
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 1vw 0vw 1vw 1vw;
+}
+.input2{
+    margin: 2vw 2vw 2vw 2vw;
+}
+.inp2{
+    width: 100%;
+    border-radius: 0.5vw;
+    border:1px solid rgba(0, 0, 0, 0.37);
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 1vw 0vw 1vw 1vw;
+}
+.input1>div>select{
+    width: 100%;
+    border-radius: 0.5vw;
+    border:1px solid rgba(0, 0, 0, 0.37);
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 1vw 0vw 1vw 1vw;
+}
+.button5{
+    float: right;
+    font-weight: 500;
+    color: white;
+    background-color: #FF612F;
+    margin: 2vw 1vw 2vw 2vw;
+    padding: 0.5vw 3vw 0.5vw 3vw;
+    border: none #1EB4AB;
+    border-radius: 2vw;
+    font-size: 1vw;
+    
+}
+#allstudents{
+    overflow: scroll;
+    margin-top: 4vh;
+    width: 100%;
+    height: 60vh;
+}
+.h1{
+    color: #ff3c00;
+    font-size: 2vw;
+    margin-top: 4vw;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 1vw;
+    font-size: 1.4vw;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #FF612F;
+    color: #fff;
+}
+.notification-badge {
+    width: 0.4vw;
+    position: relative;
+    bottom: 3.3vw;
+    right: -1.5vw;
+    background-color: #FF612F;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2vw 0.5vw;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+.notification-badge1 {
+    width: 0.4vw;
+    position: relative;
+    bottom: 3.3vw;
+    right: -1.5vw;
+    background-color: #FF612F;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2vw 0.5vw;
+    font-size: 0.8vw;
+    font-weight: bold;
+}
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#searchInput{
+    width: 25vw;
+    margin-top: 3vw;
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 1vw 0vw 1vw 1vw;
+    border-radius: 0.5vw;
+    border:1px solid rgba(0, 0, 0, 0.37);
+}
+.update-btn{
+    margin-left: 1vw;
+    padding: 0.7vw 2vw 0.7vw 2vw;
+    border: none;
+    background-color: #FF612F;
+    color: #fff;
+    border-radius: 4vw;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(39, 34, 34);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    overflow: scroll;
+}
+
+.close-button,.close-payment-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover, .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.verify-payment-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.verify-payment-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}

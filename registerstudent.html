@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .input1{
+    margin: 2vw 2vw 2vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+}
+.inp1>h3,.input2>h3,.input3>h3{
+    font-size: 1.3vw;
+    font-weight: 700;
+    padding-bottom: 1vw;
+}
+.inp1{
+    width: 100%;
+}
+.inp1>input{
+    width: 100%;
+    border-radius: 0.5vw;
+    border:1px solid rgba(0, 0, 0, 0.37);
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 1vw 0vw 1vw 1vw;
+}
+.input2{
+    margin: 2vw 2vw 2vw 2vw;
+}
+.inp2{
+    width: 100%;
+    border-radius: 0.5vw;
+    border:1px solid rgba(0, 0, 0, 0.37);
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 1vw 0vw 1vw 1vw;
+}
+.input1>div>select{
+    width: 100%;
+    border-radius: 0.5vw;
+    border:1px solid rgba(0, 0, 0, 0.37);
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 1vw 0vw 1vw 1vw;
+}
+.button5{
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    font-weight: 500;
+    color: white;
+    background-color: #4e2fff;
+    padding: 0.5vw 3vw 0.5vw 3vw;
+    border: none #1EB4AB;
+    border-radius: 2vw;
+    font-size: 1vw;
+    
+}
+.addstudent{
+    margin: 4vw;
+    padding: 2vw;
+    background-color: #cafffb;
+}
+.ss1{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 1vw;
+    box-shadow: 3px 3px 3px 3px  rgb(214, 231, 231);
+    background-color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="addstudent">
+        <h1 class="h1">Register Yourself</h1>
+        <form action="" id="studentform">
+        <div class="ss1">
+            <div class="input1">
+                <div class="inp1"><h3>Student Name</h3><input id="sname" type="text" placeholder="S. Name" required></div>
+                <div class="inp1"><h3>Father Name</h3><input id="fname" type="text" placeholder="F. Name" required></div>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Student CNIC</h3><input id="scnic" type="number" placeholder="CNIC" required></div>
+                <div class="inp1"><h3>Father CNIC</h3><input id="fcnic" type="number" placeholder="CNIC" required></div>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Roll No</h3><input id="rollno" type="number" placeholder="student roll no" required></div>
+                <div class="inp1"><h3>Allocate room</h3><input id="room" type="number" placeholder="room(1 to 24)" required></div>
+            </div>
+            <div class="input2">
+                <h3>Address</h3><input id="address" type="text" class="inp2" placeholder="pakistan" required>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Student Mobile Number</h3><input id="snumber" type="number" placeholder="+923425440120" required></div>
+                <div class="inp1"><h3>Guardian Mobile Number</h3><input id="fnumber" type="number" placeholder="+923425440120" required></div>
+            </div>
+            <div class="input2">
+                <h3>Session</h3><input id="date" type="date" class="inp2" required>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Degree</h3><select name="" id="degree">
+                    <option value="BS">BS</option>
+                    <option value="First_Year">First Year</option>
+                    <option value="Second_Year">Second Year</option>
+                </select></div>
+                <div class="inp1"><h3>Gender</h3><select name="" id="gender">
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">Other</option>
+                </select></div>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Username</h3><input id="username" type="test" placeholder="harry" required></div>
+                <div class="inp1"><h3>Password</h3><input id="password" type="password" placeholder="harry123" required></div>
+            </div>
+            <div><button type="submit" class="button5">Register Yourself</button></div>
+        </div>
+        </form>
+    </div>
+    <script src="registerstudent.js"></script>
+</body>
+</html>

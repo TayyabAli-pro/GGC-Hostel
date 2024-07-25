@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="student.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <nav class="nav" >
+        <div class="mainlogo">
+
+        </div>
+        <div class="icons">
+            
+            <div id="icon1"><a href="student.html" id="tag1"><i class="ri-home-4-line"></i></a></div>
+            <div id="icon2"><a href="studentmanage.html"><i class="ri-user-3-line"></i></a></div>
+            <div id="icon3"><a href="studentcomplain.html"><i class="ri-edit-box-line"></i></a></div>
+            <div id="icon4"><a href="studentmess.html"><i class="ri-restaurant-line"></i></a>
+            <span class="notification-badge" id="notificationBadge">0</span>
+            </div>
+        </div>
+    </nav>
+    <header class="header" >
+        <div class="logo"></div>
+        <h3 class="text">Hello!</h3>
+        <div class="container">
+            <select name="access" id="access">
+                <option value="student">Student</option>
+                <option value="admin">admin</option>
+            </select>
+        </div>
+</header>
+    <section class="section">
+        <div class="table-container" id="studentInfoContainer">
+            <h2>Student Information</h2>
+            <table id="studentInfoTable">
+                <tr><td>Name:</td><td id="infoName"></td></tr>
+                <tr><td>Father Name:</td><td id="infoFname"></td></tr>
+                <tr><td>Roll No:</td><td id="infoRollno"></td></tr>
+                <tr><td>Room Number:</td><td id="infoRoom"></td></tr>
+                <tr><td>Father Cnic:</td><td id="infoFcnic"></td></tr>
+                <tr><td>Student Cnic:</td><td id="infoScnic"></td></tr>
+                <tr><td>Student Moblie Number:</td><td id="infoSnumber"></td></tr>
+                <tr><td>Gaurdian Mobile NUmber:</td><td id="infoFnumber"></td></tr>
+                <tr><td>Address:</td><td id="infoAddress"></td></tr>
+                <tr><td>Session</td><td id="infoSession"></td></tr>
+                <tr><td>Degree</td><td id="infoDegree"></td></tr>
+                <tr><td>Gender</td><td id="infoGender"></td></tr>
+            </table>
+        </div>
+    </section>
+    <script src="student.js"></script>
+</body>
+</html>

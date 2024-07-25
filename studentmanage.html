@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentmanage.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body id="body">
+    <nav class="nav" >
+        <div class="mainlogo">
+        </div>
+        <div class="icons">      
+            <div id="icon1"><a href="student.html" id="tag1"><i class="ri-home-4-line"></i></a></div>
+            <div id="icon2"><a href="studentmanage.html"><i class="ri-user-3-line"></i></a></div>
+            <div id="icon3"><a href="studentcomplain.html"><i class="ri-edit-box-line"></i></a></div>
+            <div id="icon4"><a href="studentmess.html"><i class="ri-restaurant-line"></i></a>
+                <span class="notification-badge" id="notificationBadge">0</span>
+            </div>
+        </div>
+    </nav>
+    <header class="header" >
+        <div class="logo"></div>
+        <h3 class="text">Hello!</h3>
+        <div class="container">
+            <select name="access" id="access">
+                <option value="student">Student</option>
+                <option value="admin">admin</option>
+            </select>
+        </div>
+</header>
+<section  class="section">
+    <div class="table-container">
+        <h1 class="h1">Change Your Information</h1>
+        <form id="updateForm">
+            <div class="input1">
+                <div class="inp1"><h3>Student Name</h3><input id="updatesname" type="text" placeholder="S. Name" required></div>
+                <div class="inp1"><h3>Father Name</h3><input id="updatefname" type="text" placeholder="F. Name" required></div>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Student CNIC</h3><input id="updatescnic" type="number" placeholder="CNIC" required></div>
+                <div class="inp1"><h3>Father CNIC</h3><input id="updatefcnic" type="number" placeholder="CNIC" required></div>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Roll No</h3><input id="updaterollno" type="number" placeholder="roll no" required></div>
+                <div class="inp1"><h3>Allocate room</h3><input id="updateroom" type="number" placeholder="room no" required></div>
+            </div>
+            <div class="input2">
+                <h3>Address</h3><input id="updateaddress" type="text" class="inp2" placeholder="pakistan" required>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Student Mobile Number</h3><input id="updatesnumber" type="number" placeholder="+923425440120" required></div>
+                <div class="inp1"><h3>Guardian Mobile Number</h3><input id="updatefnumber" type="number" placeholder="+923425440120" required></div>
+            </div>
+            <div class="input2">
+                <h3>Session</h3><input id="updatedate" type="date" class="inp2" required>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Degree</h3><select name="degree" id="updatedegree" required>
+                    <option value="BS">BS</option>
+                    <option value="First_Year">First Year</option>
+                    <option value="Second_Year">Second Year</option>
+                </select></div>
+                <div class="inp1"><h3>Gender</h3><select name="gender" id="updategender" required>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">Other</option>
+                </select></div>
+            </div>
+            <div class="input1">
+                <div class="inp1"><h3>Username</h3><input id="updateusername" type="test" placeholder="harry" required></div>
+                <div class="inp1"><h3>Password</h3><input id="updatepassword" type="password" placeholder="harry123" required></div>
+            </div>
+        <button type="submit" class="button5">Update Information</button>
+    </form>
+    </div>
+</section>
+<script src="studentmanage.js"> </script>
+</body>
+</html>

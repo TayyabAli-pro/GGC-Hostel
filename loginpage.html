@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .pic{
+            border-radius: 50%;
+            margin-bottom: 2vw;
+            width: 8vw;
+            height: 8vw;
+            background-image: url(logo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .jumbo{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(247, 243, 243, 0.712);
+        }
+        .container{     
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 2vw;
+            background-color: white;                
+            box-shadow:  2px 6px 0.4vw rgba(0, 0, 0, 0.459) ;
+            padding-bottom: 1vw;
+            
+        }
+        .inputtext{
+            margin: 1vw 2.5vw 0vw 2.5vw;
+        }
+        .button{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            background-color: #FF612F;
+            color: white;            
+            margin-top: 2vw;
+            padding: 1vw 4vw 1vw 4vw;
+            font-size: 1.5vw;
+            border-radius: 2vw;
+            border: none;
+        }
+        button:hover{
+            transition: all ease 0.5s;
+            cursor: pointer;
+            background-color: rgb(39, 34, 34)
+        }
+        .inputtext>input{
+            padding: 1vw;
+            text-align: center;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: 1.5vw;   
+            color: black;
+        }
+        .paragraph{
+            font-size: 1.2vw;
+            text-align: center;
+            margin: 1vw 2.5vw 0vw 2.5vw;
+            color: rgba(255, 255, 255, 0.699);
+        }
+        a{
+            font-size: 1.5vw;
+        }
+        .log{
+            font-size: 1.5vw;
+            margin-top: 1vw;
+        }
+        #jumbo1{
+            display: flex;
+        }
+        #jumbo2{
+            display: none;
+        }
+        .access{
+            position: relative;
+            left: 1vw;
+            background: transparent;
+            font-size: 2vw;
+            border: none;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbo" id="jumbo1">
+        <div class="container">
+            <h1>GGC HOSTEL</h1>
+            <div class="pic"></div>
+            <form action="" id="loginpage1">
+            <div class="inputtext"><input id="name" type="text" placeholder="Username" required></div>
+            <div class="inputtext"><input id="password" type="password" placeholder="Passsword" required></div>
+            <div class="button"><button type="submit">Log In</button></div>
+            </form>
+            <hr style="background-color : rgba(255, 255, 255, 0.041); width: 100%;">   
+            <select name="" id="loginas1" class="access">
+                <option value="admin">Admin</option>
+                <option value="student">student</option>
+            </select>
+        </div>
+    </div>
+    <div class="jumbo" id="jumbo2">
+        <div class="container">
+            <h1>GGC HOSTEL</h1>
+            <div class="pic"></div>
+            <form action="" id="loginpage2">
+            <div class="inputtext"><input id="name1" type="text" placeholder="Username" required></div>
+            <div class="inputtext"><input id="password1" type="password" placeholder="Passsword" required></div>
+            <div class="button"><button type="submit">Sign In </button></div>
+            </form>
+            <div class="log">If No Account? <a href="registerstudent.html">Sign Up</a></div>
+            <hr style="background-color : rgba(255, 255, 255, 0.041); width: 100%;">   
+            <select name="" id="loginas2" class="access">
+                <option value="student">Student</option>
+                <option value="admin">admin</option>
+            </select>
+
+        </div>
+    </div>
+    <script src="loginpage.js"></script>
+</body>
+</html>
